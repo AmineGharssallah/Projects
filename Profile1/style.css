@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: "Ubuntu", sans-serif;
+    font-family:  "ubuntu",sans-serif;
     box-sizing: border-box;
     text-decoration: none;
 }
@@ -23,7 +23,111 @@ body {
 }   
 
 .header{
-    background: #2c3a
+    background: #2c3a47;
+    padding: 60px 40px;
+
+}
+.pic {
+    display: inline-block;
+    padding:8px;
+    background: linear-gradient(to left bottom, #467ff2, #717af6, #9673f6, #b76af2, #d65eea);
+    margin: auto;
+    border-radius: 50%;
+    background-size: 200% 200%;
+    animation: effect 1.5s linear infinite;
+
+
+}
+
+
+   
+
+@keyframes effect{
+    25%{
+        background-position: left bottom;
+    }
+    50%{
+        background-position: right bottom;
+    }
+    75%{
+        background-position: right top;
+    }
+    100%{
+        background-position: left top;
+    }
 }
     
+.pic img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius:50%;
+}
 
+.name{
+    color:#f2f2f2;
+    font-size: 26px;
+    font-weight: 650;
+    margin: 10px 0;
+}
+
+.desc{
+font-size: 16px;
+color:#F75353;    
+}
+
+.sm{
+    display:flex;
+    justify-content: center;
+    margin:20px 0;
+}
+
+.sm a{
+    color:#f2f2f2;
+    width: 60px;
+    font-size: 22px;
+    transition: 0.3 linear;
+}
+.sm a:hover{
+    color:#F75353;
+
+}
+.contact{
+    display: inline-block;
+    padding:15px 50px;
+    color:#F75353;
+    border: 2px solid #F75353;
+    border-radius: 16px;
+    margin-top: 16px;
+    transition: 0.3s linear;
+}
+.contact:hover{
+    background: #F75353;
+    color: #f2f2f2;
+}
+.footer{
+    background:#f2f2f2;
+    padding:60px 10px;
+
+}
+.number{
+    display:flex;
+    align-items: center;
+}
+.item{
+    flex:1;
+    text-transform: uppercase;
+    font-size: 13px;
+    color:#F75353;
+}
+.item span{
+    display: block;
+    color:#2c3a47;
+    font-size: 30px;
+
+}
+.border{
+    width: 1px;
+    height: 30px;
+    background:#bbb
+}
